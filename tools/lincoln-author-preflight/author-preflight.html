@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Author Preflight</title>
+  <link rel="stylesheet" href="./preflight.css">
+  <script type="module" src="./preflight.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Document review</p>
+      <h1>Author Preflight</h1>
+      <p>Check headings, images, links, and draft copy before you preview a page.</p>
+    </header>
+
+    <section class="controls" aria-label="Choose a document">
+      <button id="check-document" type="button" hidden>Check saved document</button>
+      <p id="status" role="status">Open this tool from DA.live to check an authored page.</p>
+    </section>
+
+    <details id="paste-panel">
+      <summary>Check pasted document HTML</summary>
+      <form id="paste-form">
+        <label for="markup">Document HTML</label>
+        <textarea id="markup" rows="6" placeholder="Paste the page's authored HTML"></textarea>
+        <button type="submit" class="secondary">Check pasted HTML</button>
+      </form>
+    </details>
+
+    <section class="report" aria-labelledby="results-title" hidden>
+      <div class="report-header">
+        <div>
+          <p id="report-source" class="eyebrow"></p>
+          <h2 id="results-title">Findings</h2>
+        </div>
+        <p id="issue-count" class="count"></p>
+      </div>
+      <ul id="findings" class="findings"></ul>
+      <p class="report-note">These checks review authored HTML. Verify the rendered page in Preview.</p>
+    </section>
+  </main>
+</body>
+</html>
