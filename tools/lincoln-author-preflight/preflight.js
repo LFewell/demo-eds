@@ -4,7 +4,6 @@ const sandbox = {
   folder: 'lincoln-lab',
 };
 
-
 const checkDocument = document.querySelector('#check-document');
 const status = document.querySelector('#status');
 const findings = document.querySelector('#findings');
@@ -159,7 +158,6 @@ async function connectEditor() {
     clearTimeout(timer);
   }
 }
-
 
 document.querySelector('#paste-form').addEventListener('submit', (event) => {
   event.preventDefault();
