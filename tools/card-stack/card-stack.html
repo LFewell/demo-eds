@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Card Stack</title>
+        <script type="module" src="./card-stack.js"></script>
+    </head>
+    <body>
+        <main>
+            <h1>Card Stack</h1>
+            <p id="current-layout" aria-live="polite">Open Card Stack from DA.live Panels.</p>
+
+            <label for="card-layout">Layout</label>
+            <select id="card-layout" disabled>
+                <option value="grid">Grid</option>
+                <option value="stacked">Stacked</option>
+            </select>
+            <button id="apply-layout" type="button" disabled>Apply</button>
+
+            <p id="card-stack-status" role="status"></p>
+        </main>
+    </body>
+</html>
